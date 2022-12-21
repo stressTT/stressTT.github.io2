@@ -10,8 +10,8 @@ import "@fontsource/fira-sans-condensed/600.css";
 import "@fontsource/fira-sans-condensed/700.css";
 import "@fontsource/fira-sans-condensed/800.css";
 import "@fontsource/fira-sans-condensed/900.css";
-import '@fortawesome/fontawesome-free/css/all.min.css'
-import './assets/tailwind.css'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import './assets/tailwind.css';
 
 
 Vue.config.productionTip = false
