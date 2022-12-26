@@ -11,7 +11,7 @@ import "@fontsource/fira-sans-condensed/700.css";
 import "@fontsource/fira-sans-condensed/800.css";
 import "@fontsource/fira-sans-condensed/900.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import './assets/tailwind.css';
+import './assets/tailwind.less';
 
 
 Vue.config.productionTip = false

@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'mapIcon': '#42bbf8',
-        'secondBG': '#f7f7f7',
+        'logoyellow': '#f4d848',
+        'logoblack': '#4a4b4d',
         'or': '#ffdcbc',
         'mainCol': '#fc6b3f',
         'grayText': '#737171',

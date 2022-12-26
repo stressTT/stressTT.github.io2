@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Fira Sans Condensed", sans-serif;
+    
+}
+
+.carousel-indicators {
+    background: rgba(0,0,0,.5);
+    width: fit-content;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.carousel-indicators button {
+    width: 4px !important;
+    height: 4px !important;
+    border-radius: 100%;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.carousel-indicators button.active {
+    width: 10px !important;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 90%);
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+    height: fit-content;
+    width: fit-content;
+    color: #000;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 0.8rem;
+    border-radius: 100%;
+    opacity: 0;
+}
+
+.carousel:hover .carousel-control-next,
+.carousel:hover .carousel-control-prev {
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    left: 1rem;
+}
+
+.carousel-control-next {
+    right: 1rem;
+}
+
+.slide-text{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gray;
+    width: 80%;
+    flex-direction: column;
+    flex-grow: 1;
+    
+}
+.carousel-inner{
+    
+    height: 780px;
+    img{
+        height: 780px;
+        object-fit: cover;
+    }
+    
+}
+
+
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1232px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1232px;
+    }
+}
+  

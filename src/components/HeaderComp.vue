@@ -1,48 +1,30 @@
 <template>
-  <div class="container mx-auto">
-    <div class="topbar">
-      <div class="flex items-center justify-between h-fit">
-        <div class="w-fit box-content">
-          <p class="mx-auto text-xl w-full lowercase p-0 flex">
-            Все услуги международной логистики
-          </p>
-          <img
-            class="max-w-xs h-full mx-auto object-fill"
-            src="https://www.concord-logistic.com/img/logo-concord.webp"
-            alt=""
-          />
-        </div>
-        <div class="block max-w-sm">
-          <div class="flex items-center mb-7 ml-5">
-            <img
-              class="border-black h-12"
-              src="https://www.concord-logistic.com/img/Russia.png"
-              alt=""
-            />
-            <i class="fa-solid text-2xl ml-5 mr-2 fa-location-dot"></i>
-            <div class="text-center">
-              <p>Офис в России:+7 929 651-06-81</p>
-              <p>Москва Киевское ш. БП "Румянцево"</p>
-            </div>
-          </div>
-          <div class="flex items-center ml-5">
-            <img
-              class="border-black h-12"
-              src="https://www.concord-logistic.com/img/United-States.png"
-              alt=""
-            />
-            <i class="fa-solid text-2xl ml-5 mr-2 fa-location-dot"></i>
-            <div class="text-center">
-              <p>Офис в США:1-908-6552600</p>
-              <p>230 West 38th Street, 14th Floor, New York, NY, 10018</p>
-            </div>
-          </div>
-        </div>
+  <div class="Header flex justify-between items-center">
+    <div class="HeadLeft flex items-center">
+      <i class="fa-solid fa-image text-7xl mr-5"></i>
+      <div>
+        <h2 class="text-4xl">SapaSendGroup</h2>
+        <h5>Транспортно-логистическая компания</h5>
       </div>
+    </div>
+    <div class="HeadRight flex items-center">
+      <h5 class="font-semibold text-2xl tracking-wider">+7 771 232 3307</h5>
+      <button class="border">
+        <i class="fa-solid fa-sort-down text-sm"></i>
+      </button>
     </div>
   </div>
 </template>
 
-<script>
-export default {};
-</script>
+<style lang="less" scoped>
+.Header {
+  position: relative;
+  z-index: 5;
+  background: #fff;
+  padding: 25px 120px 25px 30px;
+  button {
+    padding: 13px 20.625px;
+    margin-left: 20px;
+  }
+}
+</style>
