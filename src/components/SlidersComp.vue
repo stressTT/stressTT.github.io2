@@ -37,13 +37,12 @@
             />
             <div class="absolute slide-text h-15 text-white text-center">
               <div class="flex-col justify-end">
-                <p>
-                  Доставим в самые кратчайшие сроки Доставим в самые кратчайшие
-                  сроки Доставим в самые кратчайшие сроки
-                </p>
+                <p>Доставим в самые кратчайшие сроки</p>
                 <p>Автомобильные перевозки</p>
+                <button class="custom-btn btn-15">Read Morer</button>
                 <button>
-                  Расчет Стоимости <i class="fa-solid fa-caret-right"></i>
+                  Расчет Стоимости
+                  <i class="fa-solid fa-caret-right bg-white text-Orang"></i>
                 </button>
                 <p>
                   Транспортно-логистическая компания организует грузоперевозки
@@ -137,6 +136,53 @@
     </div>
   </div>
 </template>
+
+<style lang="less" scoped>
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+
+  outline: none;
+}
+.btn-15 {
+  background: #b621fe;
+  border: none;
+  z-index: 1;
+}
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #663dff;
+  border-radius: 5px;
+
+  transition: all 0.3s ease;
+}
+.btn-15:hover {
+  color: #fff;
+}
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-15:active {
+  top: 2px;
+}
+</style>
 
 <script>
 import "bootstrap";

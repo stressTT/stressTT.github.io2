@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         'logoyellow': '#f4d848',
         'logoblack': '#4a4b4d',
-        'or': '#ffdcbc',
+        'Orang': '#FBA311',
         'mainCol': '#fc6b3f',
         'grayText': '#737171',
         'discount': 'rgb(115, 190, 111)',
