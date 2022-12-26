@@ -39,10 +39,10 @@
               <div class="flex-col justify-end">
                 <p>Доставим в самые кратчайшие сроки</p>
                 <p>Автомобильные перевозки</p>
-                <button class="custom-btn btn-15">Read Morer</button>
-                <button>
+
+                <button class="btn5">
                   Расчет Стоимости
-                  <i class="fa-solid fa-caret-right bg-white text-Orang"></i>
+                  <i class="fa-solid fa-caret-right icon-m"></i>
                 </button>
                 <p>
                   Транспортно-логистическая компания организует грузоперевозки
@@ -57,6 +57,21 @@
               class="d-block w-100"
               alt="..."
             />
+            <div class="absolute slide-text h-15 text-white text-center">
+              <div class="flex-col justify-end">
+                <p>Доставим в самые кратчайшие сроки</p>
+                <p>Авиа перевозки</p>
+
+                <button class="btn5">
+                  Расчет Стоимости
+                  <i class="fa-solid fa-caret-right icon-m"></i>
+                </button>
+                <p>
+                  Транспортно-логистическая компания организует грузоперевозки
+                  по всему миру
+                </p>
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
             <img
@@ -64,6 +79,21 @@
               class="d-block w-100"
               alt="..."
             />
+            <div class="absolute slide-text h-15 text-white text-center">
+              <div class="flex-col justify-end">
+                <p>Доставим в самые кратчайшие сроки</p>
+                <p>Железнодорожные перевозки</p>
+
+                <button class="btn5">
+                  Расчет Стоимости
+                  <i class="fa-solid fa-caret-right icon-m"></i>
+                </button>
+                <p>
+                  Транспортно-логистическая компания организует грузоперевозки
+                  по всему миру
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <button
@@ -138,49 +168,48 @@
 </template>
 
 <style lang="less" scoped>
-.custom-btn {
-  width: 130px;
-  height: 40px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.icon-m {
+  background: white;
+  color: #fba311;
+  padding: 14px 16.75px;
+  border-radius: 100%;
+  margin-left: 20px;
+  font-size: 12px;
+  transition: 0.4s all;
+}
+.btn5 {
   position: relative;
+  text-decoration: none;
   display: inline-block;
-
-  outline: none;
-}
-.btn-15 {
-  background: #b621fe;
-  border: none;
   z-index: 1;
+  transition: 0.4s all;
 }
-.btn-15:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #663dff;
-  border-radius: 5px;
-
-  transition: all 0.3s ease;
+.btn5:hover {
+  color: #fba311;
 }
-.btn-15:hover {
+.btn5:hover .icon-m {
+  background: #fba311;
   color: #fff;
+  transform: rotate(360deg);
 }
-.btn-15:hover:after {
-  left: 0;
+.btn5::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+  border-radius: 37px;
   width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 0px #fff;
+  display: block;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
 }
-.btn-15:active {
-  top: 2px;
+/* if you want it to show from the right use -300px instead */
+.btn5:hover::before {
+  box-shadow: inset 300px 0px 0px #fff;
+  border-radius: 37px;
 }
 </style>
 
