@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full relative z-10">
+  <div class="w-full relative z-0">
     <div>
       <div
         id="carouselExampleIndicators"
