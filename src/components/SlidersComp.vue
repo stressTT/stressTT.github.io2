@@ -40,9 +40,9 @@
                 <p>Доставим в самые кратчайшие сроки</p>
                 <p>Автомобильные перевозки</p>
 
-                <button class="btn5">
+                <button class="btnPrice">
                   Расчет Стоимости
-                  <i class="fa-solid fa-caret-right icon-m"></i>
+                  <i class="fa-solid fa-caret-right iconPrice"></i>
                 </button>
                 <p>
                   Транспортно-логистическая компания организует грузоперевозки
@@ -62,9 +62,9 @@
                 <p>Доставим в самые кратчайшие сроки</p>
                 <p>Авиа перевозки</p>
 
-                <button class="btn5">
+                <button class="btnPrice">
                   Расчет Стоимости
-                  <i class="fa-solid fa-caret-right icon-m"></i>
+                  <i class="fa-solid fa-caret-right iconPrice"></i>
                 </button>
                 <p>
                   Транспортно-логистическая компания организует грузоперевозки
@@ -84,9 +84,9 @@
                 <p>Доставим в самые кратчайшие сроки</p>
                 <p>Железнодорожные перевозки</p>
 
-                <button class="btn5">
+                <button class="btnPrice">
                   Расчет Стоимости
-                  <i class="fa-solid fa-caret-right icon-m"></i>
+                  <i class="fa-solid fa-caret-right iconPrice"></i>
                 </button>
                 <p>
                   Транспортно-логистическая компания организует грузоперевозки
@@ -168,48 +168,98 @@
 </template>
 
 <style lang="less" scoped>
-.icon-m {
-  background: white;
-  color: #fba311;
-  padding: 14px 16.75px;
+.carousel-indicators {
+  background: rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  border-radius: 10px;
+  padding: 2px;
+}
+.btnPrice {
+  margin-bottom: 70px;
+  margin-top: 25px;
+}
+
+.carousel-indicators button {
+  width: 4px !important;
+  height: 4px !important;
   border-radius: 100%;
-  margin-left: 20px;
-  font-size: 12px;
-  transition: 0.4s all;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+  border-top: none !important;
+  border-bottom: none !important;
 }
-.btn5 {
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
-  z-index: 1;
-  transition: 0.4s all;
+
+.carousel-indicators button.active {
+  width: 10px !important;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 90%);
 }
-.btn5:hover {
-  color: #fba311;
+
+.carousel-control-prev,
+.carousel-control-next {
+  height: fit-content;
+  width: fit-content;
+  color: #000;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 10.5px 14px;
+  border-radius: 100%;
+  opacity: 0;
+  border: 1px solid rgb(114, 111, 111);
 }
-.btn5:hover .icon-m {
-  background: #fba311;
-  color: #fff;
-  transform: rotate(360deg);
+
+.carousel:hover .carousel-control-next,
+.carousel:hover .carousel-control-prev {
+  opacity: 1;
 }
-.btn5::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  z-index: -1;
-  border-radius: 37px;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 0px 0px 0px #fff;
-  display: block;
-  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
-  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+
+.carousel-control-prev {
+  left: 1rem;
 }
-/* if you want it to show from the right use -300px instead */
-.btn5:hover::before {
-  box-shadow: inset 300px 0px 0px #fff;
-  border-radius: 37px;
+
+.carousel-control-next {
+  right: 1rem;
+}
+
+.slide-text {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 80%;
+  flex-direction: column;
+  flex-grow: 1;
+
+  p:nth-child(1) {
+    font-size: 22px;
+    opacity: 0.6;
+  }
+  p:nth-child(2) {
+    font-size: 4.1vw;
+    letter-spacing: 0.7px;
+    line-height: normal;
+  }
+  // button {
+
+  // }
+  p:nth-child(4) {
+    padding-bottom: 50px;
+    font-size: 18px;
+    opacity: 0.6;
+    font-weight: 400;
+  }
+}
+.carousel-inner {
+  height: 780px;
+  img {
+    height: 780px;
+    object-fit: cover;
+  }
 }
 </style>
 

@@ -10,7 +10,7 @@
         >
       </div>
     </div>
-    <div class="sub-main">
+    <div class="sub-main flex">
       <div class="modal-header">
         <!-- <div class="ddHeader-1 block">
             <span>Астана, Ленинский проспект, дом</span> <br />
@@ -31,6 +31,7 @@
           <img src="../assets/img/insta.svg" alt="" />
         </div>
       </div>
+      <Contactus />
     </div>
   </div>
 </template>
@@ -43,11 +44,14 @@
     color: #fffffe;
     p {
       font-size: 3.5vw;
+      line-height: normal;
     }
     .span-w {
       font-size: 20px;
       opacity: 0.6;
       max-width: 640px;
+      line-height: 27px;
+      letter-spacing: 0.3px;
     }
   }
   .sub-main {
@@ -57,8 +61,8 @@
       color: #fffffe;
     }
     .modal-header {
-      width: 100%;
-
+      width: 30%;
+      padding-top: 5%;
       display: block;
     }
     .fa-telegram {
@@ -95,3 +99,11 @@
   }
 }
 </style>
+
+<script>
+import Contactus from "./ContactusComp.vue";
+
+export default {
+  components: { Contactus },
+};
+</script>
