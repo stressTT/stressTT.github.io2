@@ -230,14 +230,15 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-
+  position: relative;
+  z-index: 1;
   width: 80%;
   flex-direction: column;
   flex-grow: 1;
 
   p:nth-child(1) {
     font-size: 22px;
-    opacity: 0.6;
+    opacity: 0.8;
   }
   p:nth-child(2) {
     font-size: 4.1vw;
@@ -260,6 +261,16 @@
     height: 780px;
     object-fit: cover;
   }
+}
+.carousel-item:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
 }
 </style>
 

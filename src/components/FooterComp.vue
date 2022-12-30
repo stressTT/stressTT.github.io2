@@ -17,14 +17,15 @@
             <a href="">Показать на карте</a>
           </div> -->
         <div class="ddHeader-2 flex items-center">
-          <span>+7 771 232 3307</span> <i class="fa-brands fa-telegram"></i>
+          <span class="numbers">+7 771 232 3307</span>
+          <i class="fa-brands fa-telegram"></i>
           <i class="fa-brands fa-whatsapp"></i>
         </div>
         <div class="ddHeader-3">
           <span>test@example.com</span>
         </div>
         <div class="ddHeader-4">
-          <span>Работаем 24/7</span>
+          <span class="numbers">Работаем 24/7</span>
         </div>
         <div class="ddHeader-5">
           <img src="../assets/img/vk.svg" alt="" />
@@ -33,14 +34,20 @@
       </div>
       <Contactus />
     </div>
+    <div class="License">
+      <div class="left-License flex items-center">
+        <a href="#head"><i class="fa-solid fa-arrow-up bg-mainCol"></i></a>
+        <span>Copyright © 2020 - 2022 Транспортно-логистическая компания</span>
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="less" scoped>
 .Footer {
-  padding: 7% 0 100px 7%;
+  padding-top: 7%;
   .main {
-    padding: 0 7% 4% 0;
+    padding: 0 7% 4% 7%;
     color: #fffffe;
     p {
       font-size: 3.5vw;
@@ -55,6 +62,8 @@
     }
   }
   .sub-main {
+    padding-left: 7%;
+    padding-bottom: 100px;
     p,
     span,
     a {
@@ -95,6 +104,25 @@
       img:nth-child(1) {
         margin-left: 0;
       }
+    }
+  }
+  .License {
+    padding: 35px 7%;
+    background: #fff;
+    width: 100%;
+    .left-License {
+      width: 31%;
+    }
+    i {
+      padding: 16px 19.5px;
+      color: #fff;
+      font-size: 28px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    span {
+      font-size: 17px;
+      margin-left: 30px;
     }
   }
 }

@@ -10,7 +10,7 @@ module.exports = {
         'logoyellow': '#f4d848',
         'logoblack': '#4a4b4d',
         'Orang': '#FBA311',
-        'mainCol': '#fc6b3f',
+        'mainCol': '#3f235d',
         'grayText': '#737171',
         'discount': 'rgb(115, 190, 111)',
         'credit': 'rgb(244, 128, 18)',

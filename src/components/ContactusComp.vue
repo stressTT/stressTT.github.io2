@@ -5,10 +5,15 @@
       <span
         >Заполните форму, наш менеджер свяжется с Вами в ближайшее время.</span
       >
-      <input type="text" class="contactus mt-6" placeholder="Ваше имя" />
-      <input type="number" class="contactus" placeholder="Телефон" />
-      <input type="e-mail" class="contactus" placeholder="E-mail" />
+      <input
+        type="text"
+        class="contactus numbers mt-6"
+        placeholder="Ваше имя"
+      />
+      <input type="number" class="contactus numbers" placeholder="Телефон" />
+      <input type="e-mail" class="contactus numbers" placeholder="E-mail" />
       <textarea
+        class="numbers"
         name=""
         id=""
         cols="30"
@@ -20,7 +25,7 @@
         <span>Ознакомлен(на) с пользовательским соглашением</span>
       </div>
       <button class="btnPrice">
-        Расчет Стоимости
+        Отправить
         <i class="fa-solid fa-caret-right iconPrice"></i>
       </button>
     </form>

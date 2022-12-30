@@ -8,7 +8,9 @@
       </div>
     </div>
     <div class="HeadRight flex items-center">
-      <h5 class="font-semibold text-2xl tracking-wider">+7 771 232 3307</h5>
+      <h5 class="font-semibold text-2xl tracking-wider numbers">
+        +7 771 232 3307
+      </h5>
       <div
         class="relative ddbutton ml-5"
         @click="myFilter()"
@@ -23,14 +25,15 @@
             <a href="">Показать на карте</a>
           </div> -->
           <div class="ddHeader-2 flex items-center">
-            <span>+7 771 232 3307</span> <i class="fa-brands fa-telegram"></i>
+            <span class="numbers">+7 771 232 3307</span>
+            <i class="fa-brands fa-telegram"></i>
             <i class="fa-brands fa-whatsapp"></i>
           </div>
           <div class="ddHeader-3">
             <span>test@example.com</span>
           </div>
           <div class="ddHeader-4">
-            <span>Работаем 24/7</span>
+            <span class="numbers">Работаем 24/7</span>
           </div>
           <div class="ddHeader-5">
             <img src="../assets/img/vk.svg" alt="" />
@@ -53,6 +56,7 @@
     padding: 13px 20.625px;
     border: 1px solid #121212;
     opacity: 0.4;
+    border-radius: 3px;
     i {
       transition: 0.4s all;
       display: flex;
