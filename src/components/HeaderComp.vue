@@ -3,14 +3,12 @@
     <div class="HeadLeft flex items-center">
       <i class="fa-solid fa-image text-7xl mr-5"></i>
       <div>
-        <h2 class="text-4xl">SapaSendGroup</h2>
-        <h5>Транспортно-логистическая компания</h5>
+        <h2>BekLogistics</h2>
+        <h5 class="text-lg">Транспортно-логистическая компания</h5>
       </div>
     </div>
     <div class="HeadRight flex items-center">
-      <h5 class="font-semibold text-2xl tracking-wider numbers">
-        +7 771 232 3307
-      </h5>
+      <h5 class="font-bold numbers">+7 771 232 3307</h5>
       <div
         class="relative ddbutton ml-5"
         @click="myFilter()"
@@ -51,6 +49,13 @@
   z-index: 1;
   background: #fff;
   padding: 25px 120px 25px 30px;
+  h2 {
+    font-size: 33px;
+  }
+  h5 {
+    font-size: 23px;
+    color: #121212;
+  }
 
   button {
     padding: 13px 20.625px;

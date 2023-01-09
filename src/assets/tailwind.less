@@ -11,11 +11,16 @@ body {
 .numbers{
   font-family: "Arsenal", sans-serif;
 }
+:root{
+  --main-1: 251, 163, 17;
+  --main-2: 63, 35, 93;
+  --white: 255, 255, 255;
+}
 
 
 .iconPrice {
     background: white;
-    color: #fba311;
+    color: rgba(var(--main-1));
     padding: 14px 16.75px;
     border-radius: 100%;
     margin-left: 20px;
@@ -29,17 +34,17 @@ body {
     z-index: 1;
     transition: 0.4s all;
     padding: 15px 20px 15px 30px;
-    background-color: #fba311;
+    background-color: rgba(var(--main-1));
     border-radius: 37px;
-    border: 2px solid #fba311;
+    border: 2px solid rgba(var(--main-1));
     letter-spacing: 0.6px;
     font-size: 18px;
   }
   .btnPrice:hover {
-    color: #fba311;
+    color: rgba(var(--main-1));
   }
   .btnPrice:hover .iconPrice {
-    background: #fba311;
+    background: rgba(var(--main-1));
     color: #fff;
     transform: rotate(360deg);
   }
@@ -66,8 +71,8 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
     
+    width: 13px;
   }
   
   /* Track */
@@ -79,7 +84,8 @@ body {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #555; 
-    
+    border: 3px solid #fff;
+    border-radius: 10px;
    
   }
   
