@@ -1,10 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import './assets/jq.js'
 import "@fontsource/tenor-sans"
 import "@fontsource/arsenal"
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './assets/tailwind.less';
+import '../node_modules/slick-carousel/slick/slick.min.js';
+import '../node_modules/slick-carousel/slick/slick.less';
+import '../node_modules/slick-carousel/slick/slick-theme.less';
+
 
 
 Vue.config.productionTip = false

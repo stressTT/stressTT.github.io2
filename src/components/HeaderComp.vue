@@ -1,14 +1,14 @@
 <template>
   <div class="Header flex justify-between items-center">
     <div class="HeadLeft flex items-center">
-      <i class="fa-solid fa-image text-7xl mr-5"></i>
+      <i class="fa-solid fa-image mr-5"></i>
       <div>
-        <h2>BekLogistics</h2>
-        <h5 class="text-lg">Транспортно-логистическая компания</h5>
+        <p>BekLogistics</p>
+        <span class="text-lg">Транспортно-логистическая компания</span>
       </div>
     </div>
     <div class="HeadRight flex items-center">
-      <h5 class="font-bold numbers">+7 771 232 3307</h5>
+      <span class="font-bold numbers">+7 771 232 3307</span>
       <div
         class="relative ddbutton ml-5"
         @click="myFilter()"
@@ -49,12 +49,23 @@
   z-index: 1;
   background: #fff;
   padding: 25px 120px 25px 30px;
-  h2 {
-    font-size: 33px;
+  .HeadLeft {
+    i {
+      font-size: 70px;
+    }
+    p {
+      font-size: 33px;
+    }
+    span {
+      font-size: 23px;
+      color: #121212;
+    }
   }
-  h5 {
-    font-size: 23px;
-    color: #121212;
+  .HeadRight {
+    span {
+      font-size: 23px;
+      color: #121212;
+    }
   }
 
   button {

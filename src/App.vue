@@ -4,8 +4,11 @@
     <Header />
 
     <Sliders />
+
     <Achive />
     <Services />
+    <Company />
+    <Partnership />
     <BG />
     <Navbar />
     <Footer />
@@ -20,8 +23,20 @@ import Sliders from "./components/SlidersComp.vue";
 import Footer from "./components/FooterComp.vue";
 import Achive from "./components/AchiveComp.vue";
 import Services from "./components/ServicesComp.vue";
+import Company from "./components/CompanyComp.vue";
+import Partnership from "./components/PartnershipComp.vue";
 
 export default {
-  components: { Header, Navbar, BG, Sliders, Footer, Achive, Services },
+  components: {
+    Header,
+    Navbar,
+    BG,
+    Sliders,
+    Footer,
+    Achive,
+    Services,
+    Company,
+    Partnership,
+  },
 };
 </script>

@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="num">
-          <a class="numbers" href="">+7 700 000 0000</a>
+          <span class="numbers" href="">+7 700 000 0000</span>
           <button class="btnPrice">
             Отправить
             <i class="fa-solid fa-caret-right iconPrice"></i>
@@ -48,6 +48,7 @@
 .services {
   padding-top: 7%;
   padding-bottom: 2%;
+
   .nav {
     padding: 0 7% 3.8%;
     color: #fff;
@@ -75,6 +76,7 @@
     padding: 0 7%;
 
     .service {
+      cursor: pointer;
       padding: 6%;
       width: 100%;
       background: #fff;
@@ -138,10 +140,10 @@
         align-items: center;
         width: 50%;
         padding-left: 30px;
-        a {
-          text-decoration: none;
+        span {
           font-size: 26px;
           font-weight: 400;
+          cursor: pointer;
         }
         .btnPrice {
           background: rgba(var(--main-2));
